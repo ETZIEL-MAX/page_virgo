@@ -1,0 +1,215 @@
+.cardsSection {
+  padding: var(--section-y) 0 0;
+  background: var(--ink-50);
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+}
+
+.infoItem {
+  height: 100%;
+}
+
+.infoCard {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--transition-base);
+}
+
+.infoCard:hover {
+}
+
+.infoIndex {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--slate-400);
+}
+
+.infoIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--blue-400), var(--color-primary));
+  color: #ffffff;
+  margin-bottom: var(--space-2);
+}
+
+.whatsappIcon {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+}
+
+.infoTitle {
+  font-size: var(--text-lg);
+}
+
+.infoLine {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  word-break: break-word;
+}
+
+.infoCta {
+  margin-top: auto;
+  padding-top: var(--space-3);
+  font-family: var(--font-mono), monospace;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--cyan-500);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  transition: color var(--transition-fast);
+}
+
+.infoCard:hover .infoCta {
+  color: var(--secondary-600);
+}
+
+.formSection {
+  padding: clamp(3rem, 6vw, 5rem) 0 var(--section-y);
+  background: var(--ink-50);
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.formPanel {
+  border-radius: var(--radius-lg);
+  padding: clamp(1.75rem, 4vw, 2.75rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.formTitle {
+  font-size: var(--text-h3);
+  margin-bottom: var(--space-2);
+}
+
+.formIntro {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-6);
+}
+
+.sideColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.hoursCard,
+.mapCard {
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+
+.sideIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--blue-400), var(--color-primary));
+  color: #ffffff;
+  margin-bottom: var(--space-3);
+}
+
+.sideTitle {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-4);
+}
+
+.hoursList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.hoursRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.hoursRow:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.hoursDays {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.hoursTime {
+  font-family: var(--font-mono), monospace;
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.mapPlaceholder {
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-md);
+  background: linear-gradient(150deg, var(--blue-50), var(--color-surface-strong));
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-300);
+  margin-bottom: var(--space-4);
+}
+
+.mapText {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-3);
+}
+
+.mapLink {
+  font-family: var(--font-mono), monospace;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--cyan-500);
+}
+
+.mapLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .infoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+}

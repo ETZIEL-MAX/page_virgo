@@ -1,0 +1,132 @@
+.section {
+  padding: var(--section-y) 0;
+  background: var(--color-primary-deep);
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: center;
+}
+
+.visual {
+  display: flex;
+  justify-content: center;
+}
+
+.leafCard {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 1;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(160deg, rgba(16, 185, 129, 0.16), rgba(16, 185, 129, 0.04));
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.leafCard::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border-radius: calc(var(--radius-xl) - 12px);
+  border: 1px dashed rgba(16, 185, 129, 0.3);
+}
+
+.ring {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  border-radius: 50%;
+  border: 1px solid rgba(16, 185, 129, 0.18);
+  animation: spinSlow 50s linear infinite;
+}
+
+.leaf {
+  color: var(--cyan-500);
+  filter: drop-shadow(0 12px 40px rgba(16, 185, 129, 0.45));
+}
+
+.tag {
+  position: absolute;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: var(--cyan-400);
+  padding: 0.45rem 0.85rem;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  border-radius: var(--radius-full);
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-6);
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--cyan-400);
+}
+
+.title {
+  font-size: var(--text-h2);
+  color: #ffffff;
+  text-wrap: balance;
+}
+
+.text {
+  font-size: var(--text-lg);
+  color: #ffffff;
+  max-width: 540px;
+  line-height: var(--leading-normal);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-base);
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: var(--radius-full);
+  background: var(--cyan-500);
+  color: #ffffff;
+  box-shadow: 0 0 0 5px rgba(16, 185, 129, 0.18);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .leafCard {
+    max-width: 360px;
+    margin-inline: auto;
+  }
+}

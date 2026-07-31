@@ -1,0 +1,29 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0" stop-color="#061226"/>
+      <stop offset="0.55" stop-color="#0b2a4a"/>
+      <stop offset="1" stop-color="#123a63"/>
+    </linearGradient>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0V56" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.5" cy="0.2" r="0.7">
+      <stop offset="0" stop-color="#3e83c7" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#3e83c7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="48" y="48" width="112" height="112" rx="28" fill="#0b2a4a" stroke="#ffffff" stroke-opacity="0.15" stroke-width="2"/>
+  <path d="M104 76 L168 152 H146 L104 106 L62 152 H40 Z" fill="#ffffff" transform="translate(-40,-24)"/>
+  <path d="M104 98 L132 136 H121 L104 112 L87 136 H76 Z" fill="#7fafe0" transform="translate(-40,-24)"/>
+  <text x="186" y="136" font-family="Manrope, Arial, sans-serif" font-size="58" font-weight="800" fill="#ffffff" letter-spacing="-1.5">Plásticos</text>
+  <text x="186" y="190" font-family="Manrope, Arial, sans-serif" font-size="58" font-weight="800" fill="#7fafe0" letter-spacing="-1.5">Virgo</text>
+  <text x="48" y="360" font-family="Manrope, Arial, sans-serif" font-size="46" font-weight="700" fill="#ffffff" letter-spacing="-0.5">Bolsas y empaques de polietileno</text>
+  <text x="48" y="424" font-family="Manrope, Arial, sans-serif" font-size="30" fill="#b2d0ee" opacity="0.9">20 años fabricando calidad, precio y rendimiento en México.</text>
+  <text x="48" y="556" font-family="Manrope, Arial, sans-serif" font-size="26" fill="#ffffff" opacity="0.75">ventas@plasticosvirgo.com</text>
+  <rect x="360" y="520" width="2" height="44" fill="#ffffff" opacity="0.35"/>
+  <text x="390" y="556" font-family="Manrope, Arial, sans-serif" font-size="26" fill="#ffffff" opacity="0.75">+52 818 012 7981</text>
+</svg>

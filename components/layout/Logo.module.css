@@ -1,0 +1,42 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.image {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  object-fit: contain;
+}
+
+.wordmark {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+.wordmark strong {
+  font-weight: 800;
+  color: var(--ink-900);
+}
+
+.inverse .wordmark {
+  color: #ffffff;
+}
+
+.inverse .wordmark strong {
+  color: var(--cyan-400);
+}
+
+@media (max-width: 380px) {
+  .wordmark {
+    display: none;
+  }
+}
