@@ -33,6 +33,10 @@ export const siteConfig = {
     { days: "Domingo", hours: "Cerrado" },
   ],
   mapsQuery: "Isidoro Sepúlveda 790, Parque Industrial Apodaca, Nuevo León",
+  social: {
+    facebook: "https://www.facebook.com/share/p/14t3feQcQD3/",
+    instagram: "https://www.instagram.com/plasticosvirgo/",
+  },
 } as const;
 
 export const navItems: NavItem[] = [
