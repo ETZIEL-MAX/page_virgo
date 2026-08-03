@@ -14,14 +14,15 @@ type PageHeroProps = {
   title: string;
   description: string;
   crumbs?: Crumb[];
+  smallWatermark?: boolean;
 };
 
-export default function PageHero({ eyebrow, title, description, crumbs = [] }: PageHeroProps) {
+export default function PageHero({ eyebrow, title, description, crumbs = [], smallWatermark = false }: PageHeroProps) {
   return (
     <section className={styles.hero}>
       <Backdrop />
       <div className={styles.watermarkWrap}>
-        <div className={styles.watermark} aria-hidden="true">
+        <div className={`${styles.watermark} ${smallWatermark ? styles.watermarkSmall : ""}`} aria-hidden="true">
           {eyebrow}
         </div>
       </div>

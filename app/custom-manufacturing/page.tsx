@@ -18,7 +18,7 @@ export default function CustomManufacturingPage() {
   return (
     <>
       <PageHero
-        eyebrow="Manufactura a medida"
+        eyebrow="a medida"
         title="Tu marca, tu medida, tu empaque perfecto"
         description="Personaliza las bolsas de tu empresa con tu logotipo, en todos los colores que se requieran, fabricadas a la medida y al mejor precio de mayoreo."
         crumbs={[{ label: "Manufactura a medida", href: "/custom-manufacturing" }]}

@@ -38,8 +38,8 @@ export default function AboutPreview() {
         <div className={styles.main}>
           <Reveal className={styles.photoSlot} delay={0.06}>
             <Image
-              src="/images/maquinaria.png"
-              alt="Maquinaria Plásticos Virgo"
+              src="/images/linea-produccion.jpeg"
+              alt="Línea de producción Plásticos Virgo"
               width={700}
               height={525}
               className={styles.photo}

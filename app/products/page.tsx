@@ -20,6 +20,7 @@ export default function ProductsPage() {
     <>
       <PageHero
         eyebrow="Productos"
+        smallWatermark
         title="Variedad de materiales plásticos para tu negocio"
         description="Ofrecemos una amplia selección de materiales, medidas y calibres adaptados a tus necesidades, con opción de impresión en uno o varios colores."
         crumbs={[{ label: "Productos", href: "/products" }]}

@@ -16,8 +16,9 @@
 
 .watermark {
   position: absolute;
-  right: -2%;
+  left: 50%;
   bottom: -4%;
+  transform: translateX(-50%);
   z-index: 0;
   font-family: var(--font-display), sans-serif;
   font-weight: 800;
@@ -29,6 +30,11 @@
   user-select: none;
   pointer-events: none;
   white-space: nowrap;
+}
+
+.watermarkSmall {
+  font-size: clamp(2.5rem, 12vw, 10rem);
+  letter-spacing: -0.02em;
 }
 
 .crumbs {

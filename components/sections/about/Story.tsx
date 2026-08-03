@@ -1,9 +1,17 @@
 import { Eye, Target } from "lucide-react";
+import Image from "next/image";
 import { siteConfig } from "@/lib/site";
 import { yearSince } from "@/lib/utils";
 import Container from "@/components/ui/Container";
 import Reveal from "@/components/ui/Reveal";
 import styles from "./Story.module.css";
+
+const galleryImages = [
+  { src: "/images/linea-produccion.jpeg", alt: "Línea de producción" },
+  { src: "/images/linea-produccion-maquinas.jpeg", alt: "Maquinaria en producción" },
+  { src: "/images/personal.jpeg", alt: "Equipo de trabajo" },
+  { src: "/images/asesoria.jpeg", alt: "Asesoría personalizada" },
+];
 
 const years = yearSince(siteConfig.foundedYear);
 
@@ -91,6 +99,23 @@ export default function Story() {
             </div>
           </Reveal>
         </div>
+
+        <Reveal delay={0.14}>
+          <div className={styles.gallery}>
+            {galleryImages.map((img) => (
+              <div key={img.src} className={styles.galleryItem}>
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  width={600}
+                  height={400}
+                  className={styles.galleryImage}
+                  sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 25vw"
+                />
+              </div>
+            ))}
+          </div>
+        </Reveal>
       </Container>
     </section>
   );
