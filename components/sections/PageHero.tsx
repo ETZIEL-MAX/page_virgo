@@ -20,8 +20,10 @@ export default function PageHero({ eyebrow, title, description, crumbs = [] }: P
   return (
     <section className={styles.hero}>
       <Backdrop />
-      <div className={styles.watermark} aria-hidden="true">
-        {eyebrow}
+      <div className={styles.watermarkWrap}>
+        <div className={styles.watermark} aria-hidden="true">
+          {eyebrow}
+        </div>
       </div>
       <Container>
         {crumbs.length > 0 ? (

@@ -9,9 +9,9 @@ import styles from "./ProductCard.module.css";
 const productPhotos: Record<string, string> = {
   "alta-densidad": "/images/bolsa-alta.png",
   "baja-densidad": "/images/bolsa-alta.png",
-  "camiseta": "/images/bolsas-tauro.png",
-  "hielo": "/images/bolsa-alta.png",
-  "ziploc": "/images/bolsa-impresa.png",
+  "camiseta": "/images/bolsa-camiseta.jpg",
+  "hielo": "/images/bolsa-hielo.webp",
+  "ziploc": "/images/ziploc.webp",
   "impresas": "/images/bolsa-impresa.png",
   "emplaye": "/images/emplaye.png",
   "envases": "/images/envases.png",

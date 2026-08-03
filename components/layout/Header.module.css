@@ -130,6 +130,29 @@
   color: #ffffff;
 }
 
+.socialIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.socialIcon:hover {
+  background: var(--cyan-500);
+  border-color: var(--cyan-500);
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
 .cta {
   display: inline-flex;
 }
@@ -146,30 +169,37 @@
 
 .mobileMenu {
   position: fixed;
-  inset: var(--header-h) 0 0 0;
+  top: var(--header-h);
+  left: 0;
+  right: 0;
+  height: calc(100dvh - var(--header-h));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   background: var(--blue-900);
-  padding: var(--space-10) clamp(1.25rem, 6vw, 2rem) var(--space-12);
+  padding: clamp(var(--space-6), 5vw, var(--space-10)) clamp(1rem, 4vw, 2rem) clamp(var(--space-8), 6vw, var(--space-12));
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow-y: auto;
+  z-index: 99;
 }
 
 .mobileNav {
   display: flex;
   flex-direction: column;
+  gap: var(--space-1);
 }
 
 .mobileLink {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
+  gap: var(--space-3);
   font-family: var(--font-display), sans-serif;
-  font-size: clamp(1.6rem, 6vw, 2.4rem);
+  font-size: clamp(1.15rem, 5vw, 1.75rem);
   font-weight: 800;
   letter-spacing: -0.02em;
   color: #ffffff;
-  padding: var(--space-4) 0;
+  padding: clamp(0.5rem, 2vw, var(--space-4)) 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   transition: color var(--transition-fast);
 }
@@ -179,13 +209,15 @@
 }
 
 .mobileIndex {
-  font-size: var(--text-sm);
+  font-size: clamp(0.65rem, 2vw, var(--text-sm));
   color: var(--cyan-500);
 }
 
 .mobileArrow {
   margin-left: auto;
   opacity: 0.4;
+  width: clamp(16px, 4vw, 22px);
+  height: clamp(16px, 4vw, 22px);
 }
 
 .mobileCta {
@@ -201,6 +233,9 @@
     display: none;
   }
   .phone {
+    display: none;
+  }
+  .socialIcon {
     display: none;
   }
   .cta {

@@ -78,6 +78,9 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  border: none;
+  max-width: 100%;
+  box-sizing: border-box;
   transition:
     transform var(--transition-fast),
     box-shadow var(--transition-base);

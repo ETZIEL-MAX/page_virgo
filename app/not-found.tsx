@@ -14,9 +14,11 @@ export default function NotFound() {
   return (
     <section className={styles.section}>
       <Backdrop />
-      <span className={styles.watermark} aria-hidden="true">
-        Error
-      </span>
+      <div className={styles.watermarkWrap}>
+        <span className={styles.watermark} aria-hidden="true">
+          Error
+        </span>
+      </div>
       <Container>
         <div className={styles.content}>
           <p className={`${styles.label} mono`}>

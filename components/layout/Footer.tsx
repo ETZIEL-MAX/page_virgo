@@ -109,8 +109,10 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className={styles.watermark} aria-hidden="true">
-            VIRGO
+          <div className={styles.watermarkWrap}>
+            <div className={styles.watermark} aria-hidden="true">
+              VIRGO
+            </div>
           </div>
 
           <div className={styles.bottom}>
