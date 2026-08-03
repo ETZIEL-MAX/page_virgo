@@ -14,7 +14,7 @@ export default function Hero() {
     <section className={styles.hero}>
       <video
         className={styles.video}
-        src="/images/maquina.mp4"
+        src="/images/vidio.webm"
         autoPlay
         loop
         muted
