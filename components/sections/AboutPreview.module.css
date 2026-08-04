@@ -120,7 +120,7 @@
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--cyan-500), var(--blue-400));
+  background: #0052cc;
   color: #ffffff;
 }
 

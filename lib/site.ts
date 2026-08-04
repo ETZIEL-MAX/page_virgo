@@ -27,11 +27,7 @@ export const siteConfig = {
     country: "México",
     full: "Isidoro Sepúlveda #790, Parque Industrial Apodaca, Apodaca, Nuevo León, México",
   },
-  hours: [
-    { days: "Lunes a Viernes", hours: "8:00 – 18:00" },
-    { days: "Sábado", hours: "8:00 – 14:00" },
-    { days: "Domingo", hours: "Cerrado" },
-  ],
+  hours: [{ days: "Lunes a Viernes", hours: "9:00 am – 6:00 pm" }],
   mapsQuery: "Isidoro Sepúlveda 790, Parque Industrial Apodaca, Nuevo León",
   social: {
     facebook: "https://www.facebook.com/profile.php?id=61588715083254",

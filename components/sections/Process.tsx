@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { customProcess } from "@/lib/site";
 import Container from "@/components/ui/Container";
 import Reveal from "@/components/ui/Reveal";
@@ -17,6 +18,17 @@ export default function Process() {
               Un proceso claro y controlado que garantiza calidad y puntualidad en cada pedido.
             </p>
           </div>
+        </Reveal>
+
+        <Reveal className={styles.imageWrap}>
+          <Image
+            src="/images/logo-bg.jpg"
+            alt="Plásticos Virgo"
+            width={1264}
+            height={843}
+            className={styles.image}
+            sizes="(max-width: 640px) 100vw, (max-width: 1080px) 90vw, 720px"
+          />
         </Reveal>
 
         <ol className={styles.track}>
