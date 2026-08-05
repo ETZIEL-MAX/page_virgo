@@ -98,7 +98,7 @@ export default function Footer() {
                 </li>
                 <li className={styles.linkRow}>
                   <Clock size={15} aria-hidden="true" />
-                  Lun–Vie 8:00–18:00 / Sáb 8:00–14:00
+                  Lun–Vie 9:00–18:00
                 </li>
                 {siteConfig.rfc && (
                   <li className={styles.linkRow}>
