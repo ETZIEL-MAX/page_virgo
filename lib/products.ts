@@ -33,7 +33,7 @@ export const products: Product[] = [
   },
   {
     id: "ziploc",
-    name: "Bolsas Ziploc",
+    name: "Bolsas tipo Ziploc",
     shortName: "Ziploc",
     categoryId: "especiales",
     tagline: "Cierre hermético y reusable",
