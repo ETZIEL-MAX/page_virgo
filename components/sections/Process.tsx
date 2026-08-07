@@ -20,7 +20,6 @@ export default function Process() {
       <Container>
         <Reveal>
           <div className={styles.head}>
-            <p className={`${styles.index} mono`}>/ 04</p>
             <h2 className={styles.title}>
               De la idea a tu producto, <span className="text-accent">paso a paso</span>
             </h2>
