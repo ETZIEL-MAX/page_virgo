@@ -7,14 +7,14 @@ import Button from "./Button";
 import styles from "./ProductCard.module.css";
 
 const productPhotos: Record<string, string> = {
-  "alta-densidad": "/images/bolsa-alta.png",
-  "baja-densidad": "/images/bolsa-alta.png",
-  "camiseta": "/images/bolsa-camiseta.jpg",
+  "alta-densidad": "/images/bolsa-alta.jpeg",
+  "baja-densidad": "/images/bolsa-alta.jpeg",
+  "camiseta": "/images/bolsa-alta.jpeg",
   "hielo": "/images/bolsa-hielo.webp",
   "ziploc": "/images/ziploc.webp",
-  "impresas": "/images/bolsa-impresa.png",
-  "emplaye": "/images/emplaye.png",
-  "envases": "/images/envases.png",
+  "impresas": "/images/bolsa-impresa.jpeg",
+  "emplaye": "/images/emplaye.jpeg",
+  "envases": "/images/envases.jpeg",
 };
 
 type ProductCardProps = {
