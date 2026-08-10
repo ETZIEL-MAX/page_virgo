@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { customProcess } from "@/lib/site";
 import Container from "@/components/ui/Container";
 import Reveal from "@/components/ui/Reveal";
@@ -33,7 +34,17 @@ export default function Process() {
           {customProcess.map((step, index) => (
             <Reveal as="li" key={step.step} delay={index * 0.09} className={styles.step}>
               <div className={styles.node}>
-                <span className={`${styles.number} mono`}>{step.step}</span>
+                {step.image ? (
+                  <Image
+                    src={step.image}
+                    alt={step.title}
+                    width={72}
+                    height={72}
+                    className={styles.nodeImage}
+                  />
+                ) : (
+                  <span className={`${styles.number} mono`}>{step.step}</span>
+                )}
               </div>
               <h3 className={styles.stepTitle}>{step.title}</h3>
               <p className={styles.stepText}>{step.description}</p>

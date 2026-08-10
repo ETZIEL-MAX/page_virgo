@@ -10,8 +10,10 @@ export type ProductId =
   | "hielo"
   | "camiseta"
   | "emplaye"
+  | "emplaye-alimentario"
   | "envases"
-  | "impresas";
+  | "impresas"
+  | "transparente";
 
 export type Product = {
   id: ProductId;

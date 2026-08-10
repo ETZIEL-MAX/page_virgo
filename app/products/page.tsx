@@ -23,7 +23,7 @@ export default function ProductsPage() {
     "Bolsa negra y transparente en baja densidad 90 x 120 cm",
     "Bolsas para hielo, con o sin impresión",
     "Bolsas camiseta con impresión",
-    "Emplaye en distintos calibres, medidas y largos industrial y de grado alimenticio",
+    "Emplaye en distintos calibres, medidas y largos industrial y de grado alimentario",
     "Envases y contenedores con impresión",
   ];
 

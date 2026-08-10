@@ -151,6 +151,25 @@ const drawings: Record<ProductId, () => ReactElement> = {
       <path d="M74 92 l26 16 M126 92 l-26 16" stroke={deep} strokeWidth="3" strokeLinecap="round" />
     </>
   ),
+  "emplaye-alimentario": () => (
+    <>
+      <circle cx="100" cy="102" r="46" fill={soft} stroke={solid} strokeWidth="3" />
+      <circle cx="100" cy="102" r="26" fill="#fff" stroke={light} strokeWidth="3" />
+      <circle cx="100" cy="102" r="6" fill={deep} />
+      <path
+        d="M54 102 q12 -14 24 0 t24 0 t24 0 t24 0"
+        fill="none"
+        stroke={light}
+        strokeWidth="3"
+        strokeLinecap="round"
+      />
+      <path d="M100 76 v52" stroke={deep} strokeWidth="3" strokeLinecap="round" />
+      <path d="M74 92 l26 16 M126 92 l-26 16" stroke={deep} strokeWidth="3" strokeLinecap="round" />
+      <text x="100" y="112" textAnchor="middle" fontSize="14" fontWeight="700" fill={deep}>
+        A+
+      </text>
+    </>
+  ),
   envases: () => (
     <>
       <rect x="62" y="76" width="76" height="62" rx="10" fill={soft} stroke={solid} strokeWidth="3" />
@@ -172,6 +191,25 @@ const drawings: Record<ProductId, () => ReactElement> = {
       <rect x="66" y="88" width="68" height="4" rx="2" fill={deep} opacity="0.55" />
       <rect x="66" y="96" width="68" height="4" rx="2" fill={light} />
       <VMark x={100} y={126} size={26} />
+    </>
+  ),
+  transparente: () => (
+    <>
+      <path
+        d="M60 58 h80 v74 a8 8 0 0 1 -8 8 H68 a8 8 0 0 1 -8 -8 Z"
+        fill={light}
+        stroke={solid}
+        strokeWidth="3"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M60 58 h80 v74 a8 8 0 0 1 -8 8 H68 a8 8 0 0 1 -8 -8 Z"
+        fill="none"
+        stroke="#ffffff"
+        strokeWidth="2"
+        strokeDasharray="6 6"
+      />
+      <VMark x={100} y={100} size={28} />
     </>
   ),
 };

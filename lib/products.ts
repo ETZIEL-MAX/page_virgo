@@ -76,6 +76,17 @@ export const products: Product[] = [
     customizations: ["Distintos calibres", "Medidas y largos variados", "Pedidos por rollo o caja"],
   },
   {
+    id: "emplaye-alimentario",
+    name: "Emplaye de Grado Alimentario",
+    shortName: "Emplaye Alimentario",
+    categoryId: "emplaye-envases",
+    tagline: "Seguridad y calidad para tus alimentos",
+    description:
+      "Emplaye de grado alimentario apto para contacto directo con alimentos. Protege, conserva y mantiene la higiene de tus productos.",
+    applications: ["Industria alimentaria", "Empacado de frutas y verduras", "Carnes y embutidos"],
+    customizations: ["Grado alimentario certificado", "Calibres y medidas variados", "Pedidos por rollo o caja"],
+  },
+  {
     id: "envases",
     name: "Envases y Contenedores",
     shortName: "Envases",
@@ -96,6 +107,17 @@ export const products: Product[] = [
       "Personaliza tus bolsas con tu logotipo y diseño en uno o varios colores. Producción profesional para que cada empaque impulse tu marca.",
     applications: ["Branding y retail", "Campañas de producto", "Distribución y eventos"],
     customizations: ["Uno o varios colores", "Logotipo y arte propio", "Diseño profesional"],
+  },
+  {
+    id: "transparente",
+    name: "Bolsa Transparente",
+    shortName: "Transparente",
+    categoryId: "baja",
+    tagline: "Claridad y exhibición perfecta",
+    description:
+      "Bolsa transparente que exhibe tu producto a la perfección, ideal para mostrarlo con claridad manteniéndolo limpio y protegido.",
+    applications: ["Retail y mostrador", "Panaderías y tortillerías", "Exhibición de productos"],
+    customizations: ["Varias medidas", "Con o sin impresión", "Calibres variados"],
   },
 ];
 

@@ -183,24 +183,28 @@ export const customProcess = [
   {
     step: "01",
     title: "Escoge la medida",
+    image: "/images/a-medida.png",
     description:
       "Todos nuestros productos pueden ser diseñados a la medida que el cliente requiera. Definimos las dimensiones exactas según el uso que le darás.",
   },
   {
     step: "02",
     title: "Promociona tu marca",
+    image: "/images/engrane.png",
     description:
       "Personaliza las bolsas de tu empresa con tu logotipo, en todos los colores que se requiera, con la más alta calidad de impresión.",
   },
   {
     step: "03",
     title: "Ahorra en mayoreo",
+    image: "/images/ahorro.png",
     description:
       "Aprovecha los precios que tenemos para nuestros clientes selectos al hacer pedidos en gran escala.",
   },
   {
     step: "04",
     title: "Medio ambiente",
+    image: "/images/ambiente.png",
     description:
       "Contamos con uno de los mejores aditivos biodegradables existentes en el continente para empaques responsables.",
   },
