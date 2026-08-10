@@ -54,6 +54,17 @@ export const products: Product[] = [
     customizations: ["Con o sin impresión", "Varias medidas", "Impresión de marca"],
   },
   {
+    id: "basura-25kg",
+    name: "Bolsa de Basura por Bultos de 25 kg",
+    shortName: "Basura 25 kg",
+    categoryId: "especiales",
+    tagline: "Resistencia en volumen para uso intensivo",
+    description:
+      "Bolsa de basura vendida por bultos de 25 kg, ideal para negocios que requieren alto consumo y rendimiento constante.",
+    applications: ["Comercios y bodegas", "Restaurantes y cocinas", "Uso industrial y limpieza"],
+    customizations: ["Distintos calibres", "Varias medidas", "Venta por bulto de 25 kg"],
+  },
+  {
     id: "camiseta",
     name: "Bolsas Camiseta",
     shortName: "Camiseta",

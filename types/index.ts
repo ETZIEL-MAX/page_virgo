@@ -8,6 +8,7 @@ export type ProductId =
   | "baja-densidad"
   | "ziploc"
   | "hielo"
+  | "basura-25kg"
   | "camiseta"
   | "emplaye"
   | "emplaye-alimentario"

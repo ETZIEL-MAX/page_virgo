@@ -11,6 +11,7 @@ const productPhotos: Record<string, string> = {
   "baja-densidad": "/images/bolsa-baja-densidad.jpeg",
   "camiseta": "/images/bolsa-camiseta.jpeg",
   "hielo": "/images/bolsa-hielo.jpeg",
+  "basura-25kg": "/images/bolsa-basura-25kg.jpeg",
   "ziploc": "/images/ziploc.jpeg",
   "impresas": "/images/bolsa-impresa.jpeg",
   "emplaye": "/images/emplaye.jpeg",

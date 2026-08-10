@@ -13,7 +13,7 @@ const sectorProducts: Record<string, string[]> = {
   industrial: ["emplaye", "envases", "alta-densidad"],
   manufacturero: ["emplaye", "impresas", "camiseta"],
   automotriz: ["emplaye", "alta-densidad", "envases"],
-  comercial: ["camiseta", "ziploc", "baja-densidad", "impresas", "transparente"],
+  comercial: ["camiseta", "ziploc", "baja-densidad", "impresas", "transparente", "basura-25kg"],
   alimenticio: ["hielo", "ziploc", "envases", "baja-densidad", "emplaye-alimentario"],
 };
 

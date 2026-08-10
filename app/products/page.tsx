@@ -22,6 +22,7 @@ export default function ProductsPage() {
     "Bolsas tipo ziploc",
     "Bolsa negra y transparente en baja densidad 90 x 120 cm",
     "Bolsas para hielo, con o sin impresión",
+    "Bolsas de basura por bultos de 25 kg",
     "Bolsas camiseta con impresión",
     "Emplaye en distintos calibres, medidas y largos industrial y de grado alimentario",
     "Envases y contenedores con impresión",

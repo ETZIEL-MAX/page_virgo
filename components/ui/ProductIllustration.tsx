@@ -109,6 +109,23 @@ const drawings: Record<ProductId, () => ReactElement> = {
       </g>
     </>
   ),
+  "basura-25kg": () => (
+    <>
+      <path
+        d="M60 58 h80 v74 a8 8 0 0 1 -8 8 H68 a8 8 0 0 1 -8 -8 Z"
+        fill={soft}
+        stroke={solid}
+        strokeWidth="3"
+        strokeLinejoin="round"
+      />
+      <path d="M72 78 h56" stroke={deep} strokeWidth="3" strokeLinecap="round" />
+      <path d="M72 92 h56" stroke={light} strokeWidth="3" strokeLinecap="round" />
+      <path d="M72 106 h56" stroke={deep} strokeWidth="3" strokeLinecap="round" />
+      <text x="100" y="128" textAnchor="middle" fontSize="14" fontWeight="700" fill={deep}>
+        25kg
+      </text>
+    </>
+  ),
   camiseta: () => (
     <>
       <path
