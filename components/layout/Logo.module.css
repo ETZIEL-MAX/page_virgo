@@ -8,8 +8,8 @@
 }
 
 .image {
-  width: clamp(82px, 8vw, 108px);
-  height: clamp(82px, 8vw, 108px);
+  width: clamp(104px, 10vw, 140px);
+  height: clamp(104px, 10vw, 140px);
   border-radius: var(--radius-sm);
   object-fit: contain;
 }
@@ -45,7 +45,7 @@
 
 @media (max-width: 640px) {
   .image {
-    width: 86px;
-    height: 86px;
+    width: 108px;
+    height: 108px;
   }
 }

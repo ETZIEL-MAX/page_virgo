@@ -13,9 +13,9 @@ export default function Logo({ inverse = false, className }: LogoProps) {
       <Image
         src="/images/logo_sf_v3.png"
         alt="Plásticos Virgo"
-        width={320}
-        height={320}
-        sizes="(max-width: 640px) 86px, 108px"
+        width={420}
+        height={420}
+        sizes="(max-width: 640px) 108px, 140px"
         className={styles.image}
         priority
       />
