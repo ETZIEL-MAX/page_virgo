@@ -137,18 +137,23 @@
 }
 
 @media (max-width: 768px) {
+  .section {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(10, 42, 58, 0.72) 0%,
+        rgba(10, 42, 58, 0.66) 52%,
+        rgba(10, 42, 58, 0.78) 100%
+      ),
+      url("/images/logo-bg.jpg") center / cover no-repeat;
+  }
+
   .video {
-    object-position: center top;
-    transform: scale(1.08);
+    display: none;
   }
 
   .videoOverlay {
-    background: linear-gradient(
-      180deg,
-      rgba(10, 42, 58, 0.42) 0%,
-      rgba(10, 42, 58, 0.48) 50%,
-      rgba(10, 42, 58, 0.62) 100%
-    );
+    background: transparent;
   }
 }
 
