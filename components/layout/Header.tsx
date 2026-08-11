@@ -46,7 +46,12 @@ export default function Header() {
     <header className={`${styles.header} ${hidden && !menuOpen ? styles.headerHidden : ""} ${solid ? styles.headerSolid : ""}`}>
       <div className={styles.bar}>
         <div className={styles.inner}>
-          <Link href="/" aria-label="Plásticos Virgo — Inicio" onClick={() => setMenuOpen(false)}>
+          <Link
+            href="/"
+            aria-label="Plásticos Virgo — Inicio"
+            onClick={() => setMenuOpen(false)}
+            className={styles.logoLink}
+          >
             <Logo inverse />
           </Link>
 

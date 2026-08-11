@@ -67,6 +67,11 @@ export const rootMetadata: Metadata = {
   alternates: {
     canonical: siteConfig.url,
   },
+  icons: {
+    icon: [{ url: "/images/logo_sf_v3.png", type: "image/png" }],
+    shortcut: ["/images/logo_sf_v3.png"],
+    apple: ["/images/logo_sf_v3.png"],
+  },
   robots: {
     index: true,
     follow: true,

@@ -59,6 +59,13 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-6);
+  position: relative;
+}
+
+.logoLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav {
@@ -229,6 +236,16 @@
 }
 
 @media (max-width: 1024px) {
+  .inner {
+    justify-content: flex-end;
+  }
+
+  .logoLink {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .nav {
     display: none;
   }
